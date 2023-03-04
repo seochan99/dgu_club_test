@@ -2,7 +2,7 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 
-const endPoint = 10;
+const endPoint = 8;
 const select = [0, 0, 0, 0,0];
 
 function calResult(){
@@ -37,11 +37,6 @@ function setResult(){
   const resultDescTitle2 = document.querySelector('.resultDescTitle2');
   resultDescTitle2.innerHTML = infoList[point].descTitle2;
   resultDesc2.innerHTML = infoList[point].desc2;
-
-  const resultDesc3 = document.querySelector('.resultDesc3');
-  const resultDescTitle3 = document.querySelector('.resultDescTitle3');
-  resultDescTitle3.innerHTML = infoList[point].descTitle3;
-  resultDesc3.innerHTML = infoList[point].desc3;
 }
 
 function goResult(){
