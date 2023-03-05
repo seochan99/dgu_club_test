@@ -125,3 +125,29 @@ function countTest(){
 
   resultCount.innerText = num;
 }
+
+function wow(element){
+  const nowImage = Math.floor(Math.random()*5)+1;
+
+  var imgURL = 'img/easter_' + nowImage + '.png';
+  
+  var easterImg = document.createElement('img');
+  const imgDiv = document.querySelector('#easterEgg');
+  var imgURL = 'img/easter_' + nowImage + '.png';
+  easterImg.src = imgURL;
+  easterImg.alt = nowImage;
+
+  easterImg.classList.add('img-fluid');
+  imgDiv.appendChild(easterImg);
+
+  element.parentNode.removeChild(element);
+
+  setTimeout(function(){
+    if(nowImage != 5){
+      alert("다시 시도해보세요 ㅠㅠ")
+    }else{
+      alert("으르렁,, 저를 찾으셨군요 !\n 화면을 멋사 부스에서 인증해 상품 받아가세요 :)")
+    }
+  }, 1000);
+  
+}
